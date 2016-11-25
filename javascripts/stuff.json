@@ -1,6 +1,4 @@
-$(document).ready(function(){
-  $("#main_shuffle").click(function(){
-    var values = JSON.parse({ "civ" : [
+"{'civ' : [
                       "America",
                       "Arabia",
                       "Aztec",
@@ -38,30 +36,4 @@ $(document).ready(function(){
                       "Culture",
                       "Religion",
                     ]
-                })
-    
-    modifyContent("map")
-    modifyContent("size")
-    modifyContent("civ")
-    modifyContent("victory")
-
-    function modifyContent(attribute){
-      $(attribute+"_content").text = randomAttribute(attribute)      
-    }
-
-    function randomAttribute(a){
-      attribute = values[a]
-      val = randomInt(aattribute.length)
-      return attribute[val-1]
-    }
-
-    function randomInt(min, max) {
-      min = Math.ceil(min);
-      max = Math.floor(max);
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-
-
-  })
-})
+                }"
