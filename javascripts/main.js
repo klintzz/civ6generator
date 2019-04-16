@@ -65,6 +65,7 @@ $(document).ready(function(){
       "Science",
       "Culture",
       "Religion",
+      "Diplomatic"
     ]
 
     modifyContent("map")
