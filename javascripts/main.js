@@ -50,6 +50,7 @@ $(document).ready(function(){
     ]
     var map = [
       "Continents",
+      "Small Continents",
       "Pangaea",
       "Fractal",
       "Islands",
