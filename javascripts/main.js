@@ -58,7 +58,6 @@ $(document).ready(function(){
       "Archipelago",
       "Continents & Islands",
       "Lakes",
-      "Island Plate",
     ]
     var size = [
       "Small",
