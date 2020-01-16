@@ -1,54 +1,191 @@
-$(document).ready(function(){
-  $("#main-shuffle").click(function(){
-    var civ = [
-      "Alexander 	Macedonian",
-"Amanitore 	Nubian",
-"Catherine de Medici 	French",
-"Chandragupta	Indian",
-"Cleopatra 	Egyptian",
-"Cyrus	Persian",
-"Dido Phoenician",
-"Eleanor of Aquitaine English",
-"Eleanor of Aquitaine Frensh",
-"Frederick Barbarossa 	German",
-"Gandhi 	Indian",
-"Genghis Khan	Mongolian ",
-"Gilgamesh 	Sumerian",
-"Gitarja 	Indonesian",
-"Gorgo 	Greek",
-"Harald Hardrada 	Norwegian",
-"Hojo Tokimune 	Japanese",
-"Jadwiga1 	Polish",
-"Jayavarman VII5 	Khmer",
-"John Curtin 	Australian",
-"Kristina Swedish",
-"Kupe Maori",
-"Lautaro	Mapuche ",
-"Mansa Musa Malian",
-"Matthias Corvinus Hungarian",
-"Montezuma 	Aztec",
-"Mvemba a Nzinga 	Kongolese",
-"Pachacuti Incan",
-"Pedro II 	Brazilian",
-"Pericles 	Greek",
-"Peter 	Russian",
-"Philip II 	Spanish",
-"Poundmaker	Cree ",
-"Qin Shi Huang 	Chinese",
-"Robert the Bruce	Scottish ",
-"Saladin 	Arabian",
-"Seondeok	Korean",
-"Shaka	Zulu ",
-"Suleiman Ottoman",
-"Tamar	Georgian ",
-"Teddy Roosevelt 	American",
-"Tomyris 	Scythian",
-"Trajan 	Roman",
-"Victoria 	English",
-"Wilfrid Laurier Canadian",
-"Wilhelmina	Dutch  ",
-    ]
-    var map = [
+const civdata = {
+  "leader":
+  [
+      { 
+          "name": "Alexander",
+          "civ": "Macedonian"
+      },
+      {   "name": "Amanitore",
+          "civ": "Nubian"
+      },
+      {   
+          "name": "Catherine de Medici ", 
+          "civ":"French"
+      },
+      {   
+          "name": "Chandragupta", 
+          "civ":"Indian"
+      },
+      {   
+          "name": "Cleopatra", 
+          "civ":"Egyptian"
+      },
+      {   
+          "name": "Cyrus", 
+          "civ":"Persian"
+      },
+      {   
+          "name": "Dido", 
+          "civ":"Phoenician"
+      },
+      {   
+          "name": "Eleanor of Aquitaine",
+          "civ": "English"
+      },
+      {   
+          "name": "Éléonore d'Aquitainee", 
+          "civ": "French"
+      },
+      {   
+          "name": "Frederick Barbarossa", 
+          "civ": "German"
+      },
+      {   
+          "name": "Gandhi", 
+          "civ":"Indian"
+      },
+      {   
+          "name": "Genghis Khan", 
+          "civ":"Mongolian"
+      },
+      {   
+          "name": "Gilgamesh", 
+          "civ":"Sumerian"
+      },
+      {   
+          "name": "Gitarja", 
+          "civ":"Indonesian"
+      },
+      {   
+          "name": "Gorgo", 
+          "civ":"Greek"
+      },
+      {   
+          "name": "Harald Hardrada", 
+          "civ":"Norwegian"
+      },
+      {   
+          "name": "Hojo Tokimun ", 
+          "civ":"Japanese"
+      },
+      {   
+          "name": "Jadwiga1", 
+          "civ":"Polish"
+      },
+      {   
+          "name": "Jayavarman VII5", 
+          "civ":"Khmer"
+      },
+      {   
+          "name": "John Curtin", 
+          "civ":"Australian"
+      },
+      {   
+          "name": "Kristina", 
+          "civ":"Swedish"
+      },
+      {   
+          "name": "Kupe", 
+          "civ":"Maori"
+      },
+      {   
+          "name": "Lautaro", 
+          "civ":"Mapuche "
+      },
+      {   
+          "name": "Mansa Musa", 
+          "civ":"Malian"
+      },
+      {   
+          "name": "Matthias Corvinus", 
+          "civ":"Hungarian"
+      },
+      {   
+          "name": "Montezuma", 
+          "civ":"Aztec"
+      },
+      {   
+          "name": "Mvemba a Nzinga", 
+          "civ":"Kongolese"
+      },
+      {   
+          "name": "Pachacuti", 
+          "civ":"Incan"
+      },
+      {   
+          "name": "Pedro II", 
+          "civ":"Brazilian"
+      },
+      {   
+          "name": "Pericles", 
+          "civ":"Greek"
+      },
+      {   
+          "name": "Peter", 
+          "civ":"Russian"
+      },
+      {   
+          "name": "Philip II", 
+          "civ":"Spanish"
+      },
+      {   
+          "name": "Poundmaker", 
+          "civ":"Cree "
+      },
+      {   
+          "name": "Qin Shi Huang", 
+          "civ":"Chinese"
+      },
+      {   
+          "name": "Robert the Bruce", 
+          "civ":"Scottish"
+      },
+      {   
+          "name": "Saladin", 
+          "civ":"Arabian"
+      },
+      {   
+          "name": "Seondeok", 
+          "civ":"Korean"
+      },
+      {   
+          "name": "Shaka", 
+          "civ":"Zulu "
+      },
+      {   
+          "name": "Suleiman", 
+          "civ":"Ottoman"
+      },
+      {   
+          "name": "Tamar", 
+          "civ":"Georgian"
+      },
+      {   
+          "name": "Teddy Roosevelt ", 
+          "civ":"American"
+      },
+      {   
+          "name": "Tomyris", 
+          "civ":"Scythian"
+      },
+      {   
+          "name": "Trajan", 
+          "civ":"Roman"
+      },
+      {   
+          "name": "Victoria", 
+          "civ":"English"
+      },
+      {   
+          "name": "Wilfrid Laurier", 
+          "civ":"Canadian"
+      },
+      {   
+          "name": "Wilhelmina", 
+          "civ":"Dutch"
+      }
+  ],
+  "map":[
       "Continents",
       "Small Continents",
       "Pangaea",
@@ -57,57 +194,65 @@ $(document).ready(function(){
       "Seven Seas",
       "Archipelago",
       "Continents & Islands",
-      "Lakes",
-    ]
-    var size = [
+      "Lakes"
+  ],
+  "size": [
       "Small",
       "Standard",
-      "Large",
-    ]
-    var victory = [
-      "Domination",
-      "Science",
-      "Culture",
-      "Religion",
-      "Diplomatic"
-    ]
+      "Large"
+  ],
+  "victory": [
+  "Domination",
+  "Science",
+  "Culture",
+  "Religion",
+  "Diplomatic"
+  ]
+}
 
-    modifyContent("map")
-    modifyContent("civ")
-    modifyContent("size")
-    modifyContent("victory")
+function shuffleContent(attribute){
+  var str = ""
+  switch(attribute){
+    case "map":
+      str = randomAttribute(civdata.map)
+      break;
+    case "leader":
+      leader = randomAttribute(civdata.leader)
+      console.log(leader)
+      str = leader.name + " (" + leader.civ + ")"
+      break;
+    case "size":
+      str = randomAttribute(civdata.size)
+      break;
+    case "victory":
+      str = randomAttribute(civdata.victory)
+      break;
+  }
+  $("p#"+attribute+"_content").text(str) 
+}
 
-    function modifyContent(attribute){
-      var str = ""
-      switch(attribute){
-        case "map":
-          str = randomAttribute(map)
-          break;
-        case "civ":
-          str = randomAttribute(civ)
-          break;
-        case "size":
-          str = randomAttribute(size)
-          break;
-        case "victory":
-          str = randomAttribute(victory)
-          break;
-      }
-      console.log(str)
-      console.log("p#"+attribute+"_content")
-      $("p#"+attribute+"_content").text(str) 
-    }
+function randomAttribute(a){
+  val = randomInt(0,a.length-1)
+  return a[val]
+}
 
-    function randomAttribute(a){
-      val = randomInt(0,a.length-1)
-      return a[val]
-    }
+function randomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-    function randomInt(min, max) {
-      min = Math.ceil(min);
-      max = Math.floor(max);
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+$(document).ready(function(){
+  $("#all_button").click(function(){    
+    shuffleContent("map")
+    shuffleContent("leader")
+    shuffleContent("size")
+    shuffleContent("victory")
   })
-  $("#main-shuffle").click()
+  $(".shuffle").click(function(){
+    let content = $(this).attr('id').slice(0, -7)
+    shuffleContent(content)
+  })
+
+  $("#all_button").click()
 })
