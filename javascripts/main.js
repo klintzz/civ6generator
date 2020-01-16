@@ -54,7 +54,11 @@ $(document).ready(function(){
       "Pangaea",
       "Fractal",
       "Islands",
-      "Earth",
+      "Seven Seas",
+      "Archipelago",
+      "Continents & Islands",
+      "Lakes",
+      "Island Plate',
     ]
     var size = [
       "Small",
