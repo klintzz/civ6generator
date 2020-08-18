@@ -12,6 +12,10 @@ const civdata = {
           "name": "Catherine de Medici ", 
           "civ":"French"
       },
+     {   
+          "name": "Catherine de Medici (Magnificence) ", 
+          "civ":"French"
+      },
       {   
           "name": "Chandragupta", 
           "civ":"Indian"
@@ -88,6 +92,10 @@ const civdata = {
           "name": "Kupe", 
           "civ":"Maori"
       },
+     {   
+          "name": "Lady Six Sky", 
+          "civ":"Mayan"
+      },
       {   
           "name": "Lautaro", 
           "civ":"Mapuche "
@@ -103,6 +111,10 @@ const civdata = {
       {   
           "name": "Montezuma", 
           "civ":"Aztec"
+      },
+    {   
+          "name": "Menelik II", 
+          "civ":"Ethiopian"
       },
       {   
           "name": "Mvemba a Nzinga", 
@@ -152,6 +164,10 @@ const civdata = {
           "name": "Shaka", 
           "civ":"Zulu "
       },
+    {   
+          "name": "Simon Bolivar", 
+          "civ":"Gran Colombian "
+      },
       {   
           "name": "Suleiman", 
           "civ":"Ottoman"
@@ -162,6 +178,10 @@ const civdata = {
       },
       {   
           "name": "Teddy Roosevelt ", 
+          "civ":"American"
+      },
+      {   
+          "name": "Teddy Roosevelt (Rough Rider)", 
           "civ":"American"
       },
       {   
