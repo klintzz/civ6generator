@@ -9,7 +9,7 @@ const civdata = {
           "civ": "Nubian"
       },
       {   
-          "name": "Catherine de Medici ", 
+          "name": "Catherine de Medici (Black Queen)", 
           "civ":"French"
       },
      {   
@@ -177,7 +177,7 @@ const civdata = {
           "civ":"Georgian"
       },
       {   
-          "name": "Teddy Roosevelt ", 
+          "name": "Teddy Roosevelt (Bull Moose) ", 
           "civ":"American"
       },
       {   
