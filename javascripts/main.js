@@ -8,6 +8,13 @@ const civdata = {
       {   "name": "Amanitore",
           "civ": "Nubian"
       },
+    {   "name": "Ambriorix",
+          "civ": "Gaul"
+      },
+    {   
+          "name": "Basil II", 
+          "civ":"Byzantium"
+      },
       {   
           "name": "Catherine de Medici (Black Queen)", 
           "civ":"French"
