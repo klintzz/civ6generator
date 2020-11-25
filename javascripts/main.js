@@ -75,6 +75,10 @@ const civdata = {
           "name": "Harald Hardrada", 
           "civ":"Norwegian"
       },
+     {   
+          "name": "Hammurabi", 
+          "civ":"Babylon"
+      },
       {   
           "name": "Hojo Tokimun ", 
           "civ":"Japanese"
@@ -221,7 +225,8 @@ const civdata = {
       "Seven Seas",
       "Archipelago",
       "Continents & Islands",
-      "Lakes"
+      "Lakes",
+      "Shuffle"
   ],
   "size": [
       "Small",
