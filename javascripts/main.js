@@ -11,6 +11,9 @@ const civdata = {
     {   "name": "Ambriorix",
           "civ": "Gaul"
       },
+     {   "name": "Bà Triệu",
+          "civ": "Vietnam"
+      },
     {   
           "name": "Basil II", 
           "civ":"Byzantium"
@@ -98,6 +101,14 @@ const civdata = {
       {   
           "name": "Kristina", 
           "civ":"Swedish"
+      },
+     {   
+          "name": "Kublai Khan", 
+          "civ":"Mongolio"
+      },
+      {   
+          "name": "Kublai Khan", 
+          "civ":"China"
       },
       {   
           "name": "Kupe", 
