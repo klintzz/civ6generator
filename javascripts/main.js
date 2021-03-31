@@ -95,6 +95,10 @@ const civdata = {
           "civ":"Khmer"
       },
       {   
+          "name": "João III", 
+          "civ":"Portugal"
+      },
+      {   
           "name": "John Curtin", 
           "civ":"Australian"
       },
