@@ -1,8 +1,10 @@
 const civdata = {
   "leader":
   [
-      { 
-          "name": "Alexander",
+     { "name": "Abraham Lincoln",
+          "civ": "American"
+      },
+      {  "name": "Alexander",
           "civ": "Macedonian"
       },
       {   "name": "Amanitore",
@@ -102,6 +104,9 @@ const civdata = {
           "name": "John Curtin", 
           "civ":"Australian"
       },
+       {  "name": "Julius Caesar",
+          "civ": "Roman"
+      },
       {   
           "name": "Kristina", 
           "civ":"Swedish"
@@ -126,6 +131,9 @@ const civdata = {
           "name": "Lautaro", 
           "civ":"Mapuche "
       },
+    {  "name": "Ludwig II",
+          "civ": "German"
+      },
       {   
           "name": "Mansa Musa", 
           "civ":"Malian"
@@ -145,6 +153,12 @@ const civdata = {
       {   
           "name": "Mvemba a Nzinga", 
           "civ":"Kongolese"
+      },
+    {  "name": "Nader Shah",
+          "civ": "Persian"
+      },
+    {  "name": "Nzinga Mbande",
+          "civ": "Kongolese"
       },
       {   
           "name": "Pachacuti", 
@@ -170,6 +184,9 @@ const civdata = {
           "name": "Poundmaker", 
           "civ":"Cree "
       },
+    {  "name": "Ramses II",
+          "civ": "Egyptian"
+      },
       {   
           "name": "Qin Shi Huang", 
           "civ":"Chinese"
@@ -181,6 +198,9 @@ const civdata = {
       {   
           "name": "Saladin", 
           "civ":"Arabian"
+      },
+    {  "name": "Sejong",
+          "civ": "Korean"
       },
       {   
           "name": "Seondeok", 
@@ -198,6 +218,9 @@ const civdata = {
           "name": "Suleiman", 
           "civ":"Ottoman"
       },
+    {  "name": "Sundiata Keita",
+          "civ": "Malian"
+      },
       {   
           "name": "Tamar", 
           "civ":"Georgian"
@@ -209,6 +232,12 @@ const civdata = {
       {   
           "name": "Teddy Roosevelt (Rough Rider)", 
           "civ":"American"
+      },
+    {  "name": "Theodora",
+          "civ": "Byzantine"
+      },
+    {  "name": "Tokugawa",
+          "civ": "Japan"
       },
       {   
           "name": "Tomyris", 
@@ -230,6 +259,12 @@ const civdata = {
           "name": "Wilhelmina", 
           "civ":"Dutch"
       }
+        {  "name": "Wu Zetian",
+          "civ": "Chinese"
+      },
+         {  "name": "Yongle",
+          "civ": "Chinese"
+      },
   ],
   "map":[
       "Continents",
