@@ -1,7 +1,7 @@
 const civdata = {
   "leader":
   [
-     { "name": "Abraham Lincoln",
+     {    "name": "Abraham Lincoln",
           "civ": "American"
       },
       {  "name": "Alexander",
@@ -259,10 +259,10 @@ const civdata = {
           "name": "Wilhelmina", 
           "civ":"Dutch"
       },
-        {  "name": "Wu Zetian",
+      {  "name": "Wu Zetian",
           "civ": "Chinese"
       },
-         {  "name": "Yongle",
+      {  "name": "Yongle",
           "civ": "Chinese"
       }
   ],
