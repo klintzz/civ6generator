@@ -258,13 +258,13 @@ const civdata = {
       {   
           "name": "Wilhelmina", 
           "civ":"Dutch"
-      }
+      },
         {  "name": "Wu Zetian",
           "civ": "Chinese"
       },
          {  "name": "Yongle",
           "civ": "Chinese"
-      },
+      }
   ],
   "map":[
       "Continents",
