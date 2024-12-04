@@ -36,6 +36,10 @@ const civdata = {
           "name": "Cleopatra", 
           "civ":"Egyptian"
       },
+    {   
+          "name": "Cleopatra", 
+          "civ":"Ptolemaic"
+      },
       {   
           "name": "Cyrus", 
           "civ":"Persian"
@@ -51,6 +55,10 @@ const civdata = {
       {   
           "name": "Éléonore d'Aquitainee", 
           "civ": "French"
+      },
+     {   
+          "name": "Elizabeth I", 
+          "civ": "England"
       },
       {   
           "name": "Frederick Barbarossa", 
@@ -76,24 +84,28 @@ const civdata = {
           "name": "Gorgo", 
           "civ":"Greek"
       },
-      {   
-          "name": "Harald Hardrada", 
-          "civ":"Norwegian"
-      },
      {   
           "name": "Hammurabi", 
           "civ":"Babylon"
       },
+     {   
+          "name": "Harald Hardrada (Konge)", 
+          "civ":"Norwegian"
+      },
+     {   
+          "name": "Harald Hardrada (Varangian)", 
+          "civ":"Norwegian"
+      },
       {   
-          "name": "Hojo Tokimun ", 
+          "name": "Hojo Tokimune", 
           "civ":"Japanese"
       },
       {   
-          "name": "Jadwiga1", 
+          "name": "Jadwiga", 
           "civ":"Polish"
       },
       {   
-          "name": "Jayavarman VII5", 
+          "name": "Jayavarman VII", 
           "civ":"Khmer"
       },
       {   
@@ -188,7 +200,11 @@ const civdata = {
           "civ": "Egyptian"
       },
       {   
-          "name": "Qin Shi Huang", 
+          "name": "Qin Shi Huang (Mandate of Heaven)", 
+          "civ":"Chinese"
+      },
+    {   
+          "name": "Qin Shi Huang (Unifier)", 
           "civ":"Chinese"
       },
       {   
@@ -196,7 +212,11 @@ const civdata = {
           "civ":"Scottish"
       },
       {   
-          "name": "Saladin", 
+          "name": "Saladin (Sultan)", 
+          "civ":"Arabian"
+      },
+    {   
+          "name": "Saladin (Vizier)", 
           "civ":"Arabian"
       },
     {  "name": "Sejong",
@@ -215,7 +235,11 @@ const civdata = {
           "civ":"Gran Colombian "
       },
       {   
-          "name": "Suleiman", 
+          "name": "Suleiman (Kanuni)", 
+          "civ":"Ottoman"
+      },
+     {   
+          "name": "Suleiman (Muhtesem)", 
           "civ":"Ottoman"
       },
     {  "name": "Sundiata Keita",
@@ -248,7 +272,11 @@ const civdata = {
           "civ":"Roman"
       },
       {   
-          "name": "Victoria", 
+          "name": "Victoria (Age of Empire)", 
+          "civ":"English"
+      },
+    {   
+          "name": "Victoria (Age of Steam)", 
           "civ":"English"
       },
       {   
